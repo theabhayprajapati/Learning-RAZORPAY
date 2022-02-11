@@ -50,7 +50,7 @@ const loadScript = (src) =>{
   const displayRazorpay = async () => {
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
     const options={
-      key: 'rzp_test_vRW5Wib4O9lvaa',
+      key: YOUR_KEY,
       currency: 'INR',
       amount: 1*100,
       name: 'Abhay"s Razorpay',
@@ -70,3 +70,4 @@ const loadScript = (src) =>{
 
 ```
 
+**Done with final payment now you can now you can Accept payment but there more**
