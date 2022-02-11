@@ -2,24 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 
 
-const keyId = process.env.RAZORPAY_KEY_ID
-const keySecret = process.env.RAZORPAY_KEY_SECRET
-
-  
-function loadrazorpay() {
-  return new Promise(function(resolve) {
-    const script = document.createElement('script')
-  script.src= 'https://checkout.razorpay.com/v1/checkout.js'
-  document.body.appendChild(script)
-  script.onload = () => {
-    resolve(true)
-  }
-  script.onerror = () => {
-    resolve(false)
-  }
-  })
-}
-
 const loadScript = (src) =>{
   return  new Promise((resolve, reject) =>{
     const script = document.createElement('script')
