@@ -18,10 +18,6 @@ const loadScript = (src) =>{
 function App() {
   const displayRazorpay = async () => {
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
-    !res? alert('Razorpay Failed to load'): console.log('Razorpay Loaded')
-
-    console.log('Razorpay is loading...') 
-
     const options={
       key: 'rzp_test_vRW5Wib4O9lvaa',
       currency: 'INR',
