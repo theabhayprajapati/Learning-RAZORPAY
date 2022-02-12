@@ -50,7 +50,7 @@ const loadScript = (src) =>{
   const displayRazorpay = async () => {
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
     const options={
-      key: YOUR_KEY,
+      key: YOUR_KEY, {'//todo: Make sure to change this. and put your own test / Production key's'}
       currency: 'INR',
       amount: 1*100,
       name: 'Abhay"s Razorpay',
